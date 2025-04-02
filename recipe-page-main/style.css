@@ -1,0 +1,120 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    margin-top: 100px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+main{
+    margin: 50px auto;
+    width: 50%;
+    border-radius: 3%;
+    background-color: white;
+    padding: 1.2cm;
+}
+
+img.omelette{
+margin: 1% auto;
+border-radius: 3%;
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.preparation{
+    font-size: 25px;
+    color: hsl(332, 51%, 32%);
+}
+
+.prep{
+    margin-top: 30px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 5%;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+h1{
+    font-family: "Young Serif", serif;
+    font-size: 44px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+h3{
+    margin-bottom: 15px;
+}
+
+.valor{
+    font-weight: 900;
+   color: hsl(14, 45%, 36%);
+   text-align: right;
+}
+
+p{
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+    font-size: 19px;
+}
+
+li{
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+    font-size: 19px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+li::marker {
+    color:  hsl(14, 45%, 36%);
+    font-weight: bold;
+    font-size: 19x;
+  }
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#last{
+    margin-bottom: 25px;
+}
+
+p.kcal{
+    margin-left: 30px;
+    margin-bottom: -25px;
+}
+
+p.valor{
+    margin-bottom: -10px;
+    margin-right: 10rem;
+}
+
+ul{
+margin-left: 25px;
+}
+
+ol{
+    color: hsl(14, 45%, 36%);
+    margin-left: 20px;
+}
