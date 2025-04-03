@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px auto;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+.icon{
+    height: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 65px;
+}
+
+nav ul li a {
+    font-family:  Helvetica, Arial,  sans-serif;
+    text-decoration: none;
+    color: #696868;
+    font-size: 12px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.inicio {
+    margin-top: 42px;
+    background-image: url('/apple/resourcesApple/fondo-heroo.PNG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 10px;
+}
+
+.intel{
+    width: 700px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 58px;
+    line-height: 1.07349;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 400;
+    letter-spacing: .007em;
+}
+
+button{
+    margin-top: 20px ;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #0077ED;
+    color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    min-width: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 980px;
+    border-color: transparent;
+    font-size: 17px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 400;
+    letter-spacing: .022em;
+}
+
+.Pro {
+    position: absolute;
+    background-image: url('/apple/resourcesApple/iphone.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 83vh;
+}
+
+#pie{
+    font-size: 14px;
+    line-height: 1.28577;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-top: 27px;
+    color: #86868b;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.botones{
+    align-items: center;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.comprar{
+    margin-top: 20px ;
+    margin-left: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #0077ED;
+    background-color: #0076ed00;
+    border-style: solid;
+    border-width: 1px;
+    min-width: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 980px;
+    border-color: #0077ED;
+    font-size: 17px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 400;
+    letter-spacing: .022em;
+}
+
+#title{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+#pie{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.08349;
+    letter-spacing: -.002em;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+#desc{
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #86868b;
+    font-size: 16px;
+    line-height: 1.28577;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}

@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
-body{
-    background: radial-gradient(skyblue, #563b58);
+body {
+    background: radial-gradient( #976bca, #0f0352, rgb(37, 54, 78));
     height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 
 header{
     background-color: black;
@@ -27,7 +30,12 @@ nav {
 }
 
 .logo img {
-    height: 100px; 
+    height: 70px; 
+}
+
+.logo:hover{
+    scale: 1.4;
+    transition: 0.7s;
 }
 
 .nav-links {
@@ -43,7 +51,7 @@ nav {
 }
 
 .nav-item img {
-    height: 40px;
+    height: 30px;
 }
 
 .nav-item:hover {
@@ -64,14 +72,23 @@ a{
     color: white;
 }
 
-h1,h2{
-    font-size: 2.5rem;
-    font-weight:1000;
-    margin-top: 40px;
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+    font-weight:700;
+    margin-top: 30px;
     margin-bottom: 40px;
     text-align: center;
 }
 
+h2{
+    color: white;
+    font-size: 1.5rem;
+    font-weight:700;
+    margin-bottom: 40px;
+    text-align: center;
+}
 .paginas {
     width: 80%; 
     display: flex;
@@ -84,8 +101,8 @@ h1,h2{
 }
 
 .card {
-    width: 200px;
-    height: 250px;
+    width: 290px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,7 +117,14 @@ h1,h2{
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.carrusel:hover {
+    box-shadow: #000000 10px 10px 10px;
+    transform: scale(2);
+    transition: transform 0.3s ease-in-out;
 }
 
 .card * {
@@ -109,13 +133,12 @@ h1,h2{
     object-fit: contain;
 }
 
-
 footer{
     position: fixed;
     bottom: 0;
     color: white;
     background-color: black;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     width: 100%;
 }
