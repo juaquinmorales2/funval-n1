@@ -42,7 +42,7 @@ nav ul li a {
 
 .inicio {
     margin-top: 42px;
-    background-image: url('/apple/resourcesApple/fondo-heroo.PNG');
+    background-image: url('./apple/resourcesApple/fondo-heroo.PNG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,7 +102,7 @@ button{
 
 .Pro {
     position: absolute;
-    background-image: url('/apple/resourcesApple/iphone.png');
+    background-image: url('./apple/resourcesApple/iphone.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
