@@ -6,6 +6,7 @@
 
 body{
     background-color: rgb(235, 234, 234);
+    position: relative;
 }
 
 main{
@@ -27,6 +28,11 @@ h1 {
     -webkit-text-fill-color: transparent;
     font-style: normal;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
 }
 
 hr{
@@ -98,14 +104,9 @@ a{
     width: 50%;
 }
 
-.second > div{
-
-}
-
 /*izquierda */
 
 .iz{
-    border: black 2px solid;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,13 +124,15 @@ a{
 }
 
 .iz > div{
-    border: black 2px solid;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction:row;
-    width: 300px;
     gap: 10px;
+    width: 315px;
+    height: 100px;
+    gap: 10px;
+    margin: 30px;
 }
 
 /*fin de izquierda*/
@@ -166,28 +169,82 @@ footer{
     align-items: center;
     flex-direction: column;
     width: 100%;
+    height: 89px;
+    margin: auto;
     gap: 20px;
     background-color: rgb(20, 60, 97);
 }
 
 .left{
     width: 50%;
-    border: black 2px solid;
 }
 
 .right{
+    position: relative;
     width: 50%;
-    border: rgb(134, 20, 20) 2px solid;
 }
 
+h2{
+position: absolute;
+top: -8px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 40px;
+font-weight: bold;
+color: rgb(20, 60, 97);}
+
 .footer{
+    color: white;
     position: absolute;
-    bottom: -220px;
+    margin-top: 15px;
     left: 44%;
     display: flex;
     align-items: center;
 }
 
 .yo{
-    margin-left: -700px;
+    margin-left: -1100%;
+}
+
+.runo{
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
+    position: absolute;
+    left: 60%;
+    top: 20%;
+}
+
+.rdos{
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+
+}
+
+.ldos{
+    position: absolute;
+    right: 60%;
+    top: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 100px;
+}
+
+.luno{
+    width: 200px;
+    height: 100px;
+}
+
+.luno > img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
 }
