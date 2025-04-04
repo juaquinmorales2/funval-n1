@@ -111,6 +111,10 @@ button{
     cursor: pointer;
 }
 
+li{
+    list-style: none;
+}
+
 footer{
     position: fixed;
     bottom: 0;
