@@ -1,0 +1,234 @@
+.attribution {
+    position: fixed;
+    bottom: 10px;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    font-size: 11px;
+    text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+
+body {
+    position: relative;
+     font-family:'Kumbh Sans', sans-serif; background-color: hsl(221, 100%, 96%); margin: 0; padding: 0; 
+    }
+
+.container {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 200px;
+    transform: translate(-50%, 50%);
+    left: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.violeta {
+    position: relative;
+    transform: translate(-35%, -50%);
+    z-index: 1;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 80%;
+    height: 400px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.blanco {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: hsl(224, 30%, 27%);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 80%;
+    height: 400px;
+    max-width: 400px;
+    text-align: center;
+}
+
+h3.Vt{
+    color:hsl(221, 100%, 96%);
+}
+
+.Reaction{
+    margin-left: 50px;
+    margin-top: 20px;
+    height: 40px;
+    width: 210px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsla(0, 100%, 67%, 0.068);
+}
+
+.Reaction > p{
+    font-size: 13px;
+    font-weight: bold;
+    color: hsl(0, 100%, 67%);
+}
+
+.Memory{
+    margin-left: 50px;
+    margin-top: 10px;
+    height: 40px;
+    width: 210px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsla(39, 100%, 56%, 0.068);
+}
+
+.Memory > p{
+    font-size: 13px;
+    font-weight: bold;
+    color: hsl(39, 100%, 56%);
+}
+
+.Verbal{
+    margin-left: 50px;
+    margin-top: 10px;
+    height: 40px;
+    width: 210px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsla(166, 100%, 37%, 0.068);
+}
+
+.Verbal > p{
+    font-size: 13px;
+    font-weight: bold;
+    color: hsl(166, 100%, 37%);
+}
+
+.Visual{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 210px;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsla(234, 85%, 45%, 0.068);
+}
+
+.Visual > p{
+    font-size: 13px;
+    font-weight: bold;
+    color: hsl(234, 85%, 45%);
+}
+
+.circulo{
+    position: relative;
+    transform: translate(37%, 30%);
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    margin-bottom: -25px;
+    z-index: 1;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1),  hsla(241, 72%, 46%, 0));
+}
+
+button{
+    margin-left: 50px;
+    width: 210px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.Result{
+    width: 300px;
+    height: auto;
+    margin-top: 100px;
+}
+
+.Result > p{
+    transform: translate(7%, 0%);
+    margin-top: -20px;
+    color: hsl(222, 26%, 82%);
+    font-size: 12px;
+    padding: 40px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+p.num{
+    font-size: 14px;
+    color: rgba(90, 90, 90, 0.582);
+    margin-left: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+p.loll{
+    margin-left: 42px;
+}
+
+
+p.lolll{
+    margin-left: 53px;
+}
+
+
+p.lollll{
+    margin-left: 54px;
+}
+
+p.num > b{
+    color: rgba(0, 0, 0, 0.582);
+    margin-right: 7px;
+}
+
+.circulo > h1{
+    font-family: 'Hanken Grotesk', sans-serif;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 60px;
+}
+
+p.circuloP{
+    color: hsl(222, 26%, 82%);
+    font-size: 13px;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}

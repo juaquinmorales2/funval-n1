@@ -11,6 +11,13 @@ body {
     background-attachment: fixed;
 }
 
+main{
+    height: 130vh;
+}
+
+.paginas{
+    
+}
 
 header{
     background-color: black;
