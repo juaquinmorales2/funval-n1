@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsla(0, 0%, 86%, 0.651);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 50px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 15px 15px 120px 15px;
+    padding: 40px 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dmy {
+    letter-spacing: 2px;
+    color: gray;
+    font-size: 11px;
+    font-weight: bolder;
+    display: flex;
+    gap: 120px;
+    margin-bottom: 5px;
+  }
+
+  ::placeholder{
+    color: gray;
+    font-weight: bold;
+  }
+  
+  .year{
+    margin-right: -4%;
+  }
+
+
+  .input {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .input input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 50px;
+    width: 120px;
+    padding: 0 10px;
+    font-size: 1.2rem;
+  }
+  
+  .hr {
+    margin-bottom: 20px;
+    position: relative;
+    width: 90%;
+  }
+  
+  .hr hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: lightgray;
+  }
+  
+  button {
+    position: absolute;
+    top: -30px;
+    left: 95%;
+    transform: translateX(-50%);
+    padding: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    cursor: pointer;
+  }
+  
+  button > img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .res {
+    margin-top: 30px;
+  }
+  
+  .res span {
+    color: hsl(259, 100%, 65%);
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 80px;
+  }
+
+  .bold {
+    margin-bottom: -30px;
+    font-weight: bolder;
+  }
+  
+  .res h1 {
+    display: inline-block;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: bolder;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+  }
+  
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      padding: 30px 15px;
+      border-radius: 15px 15px 100px 15px;
+    }
+  
+    .input input {
+      width: 80px;
+      font-size: 1rem;
+    }
+  
+    .res span,
+    .res h1 {
+      font-size: 50px;
+    }
+  
+    button {
+      width: 60px;
+      height: 60px;
+      top: -25px;
+    }
+  
+    button > img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .input {
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-start;
+    }
+  
+    .dmy {
+      justify-content: flex-start;
+      gap: 35px;
+    }
+  
+    .input input {
+      width: 100%;
+    }
+  
+    .res {
+      text-align: left;
+    }
+  
+    .res span,
+    .res h1 {
+      font-size: 40px;
+    }
+  }
+  

@@ -158,3 +158,11 @@ p.desc{
     margin-top: 60px;
     text-align: center;
 }
+
+h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight:700;
+    margin-top: 10px;
+}

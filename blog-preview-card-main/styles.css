@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(47, 88%, 63%);
+    margin: 0;
+    font-family: 'Figtree';
+    position: relative;
+}
+
+.card {
+    border: 1px black solid;
+    box-shadow: 5px 5px rgb(0, 0, 0);
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.pp{
+    width: 95%;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.pu{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+h1{
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.desc{
+    color: hsl(0, 0%, 42%);
+    margin-bottom: 15px;
+}
+
+.b{
+    font-size: 14px;
+    width: 100px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    border-radius: 5px;
+  background-color: hsl(47, 88%, 63%);
+}
+
+.cont{
+    margin-left: 20px;
+}
+
+.info{
+    margin-left: 20px;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.info > b{
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.avatar{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+footer{
+position: fixed;
+bottom: 10px;
+width: 100%;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
