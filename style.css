@@ -12,7 +12,7 @@ body {
 }
 
 main{
-    height: 200vh;
+    height: 175vh;
 }
 
 .paginas{
@@ -141,7 +141,6 @@ h2{
 }
 
 footer{
-    position: fixed;
     bottom: 0;
     color: white;
     background-color: black;
