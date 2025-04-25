@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Funval</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Concesionaria FUNVAL</h1>
+<div id="contenido"></div>
+<script>
+  const auto = {
+    marca: "Toyota",
+    modelo: "Corolla",
+    año: 2022,
+    color: "Rojo",
+    kilometraje: 15000,
+    combustible: "Híbrido",
+    transmisión: "Automática",
+    precio: 25000,
+    dueñosAnteriores: ["Juan Pérez", "Ana Gómez"],
+    especificaciones: {
+      motor: {
+        tipo: "4 cilindros",
+        potencia: "140 HP",
+        torque: "190 Nm",
+      },
+      seguridad: {
+        airbags: 8,
+        frenosABS: true,
+        controlEstabilidad: true,
+      },
+      dimensiones: {
+        largo: "4.63 m",
+        ancho: "1.78 m",
+        altura: "1.45 m",
+      },
+    },
+    opciones: ["Asientos de cuero", "Pantalla táctil", "Cámara de reversa"],
+    historialMantenimiento: [
+      { fecha: "10/03/2023", servicio: "Cambio de aceite", costo: 120 },
+      { fecha: "15/07/2023", servicio: "Rotación de llantas", costo: 50 },
+    ],
+    calcularDepreciacion: function (añoActual) {
+      return this.precio * 0.9 ** (añoActual - this.año);
+    },
+  };
+
+  const contenedor = document.getElementById("contenido");
+
+  function crearTabla(titulo, datos) {
+    const tabla = document.createElement("table");
+    const caption = document.createElement("caption");
+    caption.textContent = titulo;
+    tabla.appendChild(caption);
+
+    for (const clave in datos) {
+      const fila = document.createElement("tr");
+      const th = document.createElement("th");
+      th.textContent = clave;
+      const td = document.createElement("td");
+      td.textContent = datos[clave];
+      fila.appendChild(th);
+      fila.appendChild(td);
+      tabla.appendChild(fila);
+    }
+
+    contenedor.appendChild(tabla);
+  }
+
+  crearTabla("Datos del Auto", {
+    Marca: auto.marca,
+    Modelo: auto.modelo,
+    Año: auto.año,
+    Color: auto.color,
+    Kilometraje: auto.kilometraje + " km",
+    Combustible: auto.combustible,
+    Transmisión: auto.transmisión,
+    Precio: "$" + auto.precio,
+  });
+
+  crearTabla("Motor", auto.especificaciones.motor);
+  crearTabla("Seguridad", {
+    Airbags: auto.especificaciones.seguridad.airbags,
+    "Frenos ABS": auto.especificaciones.seguridad.frenosABS ? "Sí" : "No",
+    "Control Estabilidad": auto.especificaciones.seguridad.controlEstabilidad ? "Sí" : "No"
+  });
+  crearTabla("Dimensiones", auto.especificaciones.dimensiones);
+
+  function crearLista(titulo, lista) {
+    const tabla = document.createElement("table");
+    const caption = document.createElement("caption");
+    caption.textContent = titulo;
+    tabla.appendChild(caption);
+
+    lista.forEach((item, i) => {
+      const fila = document.createElement("tr");
+      const th = document.createElement("th");
+      th.textContent = "#" + (i + 1);
+      const td = document.createElement("td");
+      td.textContent = item;
+      fila.appendChild(th);
+      fila.appendChild(td);
+      tabla.appendChild(fila);
+    });
+
+    contenedor.appendChild(tabla);
+  }
+
+  crearLista("Dueños Anteriores", auto.dueñosAnteriores);
+  crearLista("Opciones", auto.opciones);
+
+  function crearHistorial(titulo, historial) {
+    const tabla = document.createElement("table");
+    const caption = document.createElement("caption");
+    caption.textContent = titulo;
+    tabla.appendChild(caption);
+
+    const encabezado = document.createElement("tr");
+    ["Fecha", "Servicio", "Costo"].forEach(col => {
+      const th = document.createElement("th");
+      th.textContent = col;
+      encabezado.appendChild(th);
+    });
+    tabla.appendChild(encabezado);
+
+    historial.forEach(registro => {
+      const fila = document.createElement("tr");
+      const tdFecha = document.createElement("td");
+      tdFecha.textContent = registro.fecha;
+      const tdServicio = document.createElement("td");
+      tdServicio.textContent = registro.servicio;
+      const tdCosto = document.createElement("td");
+      tdCosto.textContent = "$" + registro.costo;
+      fila.appendChild(tdFecha);
+      fila.appendChild(tdServicio);
+      fila.appendChild(tdCosto);
+      tabla.appendChild(fila);
+    });
+
+    contenedor.appendChild(tabla);
+  }
+
+  crearHistorial("Historial de Mantenimiento", auto.historialMantenimiento);
+</script>
+
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Bonita</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f0f4f8;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .calculadora {
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 100%;
+      max-width: 360px;
+    }
+
+    .pantalla {
+      background: #e6f0fa;
+      border-radius: 10px;
+      padding: 15px 20px;
+      font-size: 2rem;
+      text-align: right;
+      margin-bottom: 20px;
+      min-height: 60px;
+      overflow-x: auto;
+      white-space: nowrap;
+      color: #1e3a8a;
+    }
+
+    .botones {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    button {
+      font-size: 1.4rem;
+      padding: 18px;
+      border: none;
+      border-radius: 12px;
+      background: #dbeafe;
+      color: #1e3a8a;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    button:hover {
+      background: #bfdbfe;
+    }
+
+    .operador {
+      background: #c7d2fe;
+      color: #3730a3;
+    }
+
+    .igual {
+      background: #34d399;
+      color: white;
+      grid-column: span 2;
+    }
+
+    .igual:hover {
+      background: #10b981;
+    }
+
+    .clear {
+      background: #fca5a5;
+      color: white;
+    }
+
+    .clear:hover {
+      background: #f87171;
+    }
+
+    @media (max-width: 400px) {
+      .pantalla {
+        font-size: 1.5rem;
+      }
+
+      button {
+        padding: 16px;
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="calculadora">
+    <div class="pantalla" id="pantalla">0</div>
+    <div class="botones">
+      <button class="clear" onclick="limpiar()">C</button>
+      <button onclick="agregar('/')">/</button>
+      <button onclick="agregar('*')">×</button>
+      <button onclick="borrar()">⌫</button>
+
+      <button onclick="agregar('7')">7</button>
+      <button onclick="agregar('8')">8</button>
+      <button onclick="agregar('9')">9</button>
+      <button class="operador" onclick="agregar('-')">-</button>
+
+      <button onclick="agregar('4')">4</button>
+      <button onclick="agregar('5')">5</button>
+      <button onclick="agregar('6')">6</button>
+      <button class="operador" onclick="agregar('+')">+</button>
+
+      <button onclick="agregar('1')">1</button>
+      <button onclick="agregar('2')">2</button>
+      <button onclick="agregar('3')">3</button>
+      <button class="igual" onclick="calcular()">=</button>
+
+      <button onclick="agregar('0')" style="grid-column: span 2;">0</button>
+      <button onclick="agregar('.')">.</button>
+    </div>
+  </div>
+
+  <script>
+    const pantalla = document.getElementById("pantalla");
+
+    function agregar(valor) {
+      if (pantalla.innerText === "0" || pantalla.innerText === "Error") {
+        pantalla.innerText = valor;
+      } else {
+        pantalla.innerText += valor;
+      }
+    }
+
+    function limpiar() {
+      pantalla.innerText = "0";
+    }
+
+    function borrar() {
+      const texto = pantalla.innerText;
+      pantalla.innerText = texto.length > 1 ? texto.slice(0, -1) : "0";
+    }
+
+    function calcular() {
+      try {
+        pantalla.innerText = eval(pantalla.innerText);
+      } catch {
+        pantalla.innerText = "Error";
+      }
+    }
+  </script>
+</body>
+</html> -->

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./practice-dm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="./practice.js" defer></script>
+</head>
+<body class="font-['Montserrat'] bg-white dark:bg-black dark:text-white text-black">
+    <header class="h-[68px] w-[100%]">
+        <nav class="h-full w-[100%] flex justify-between px-4 items-center text-start">
+        <div class="flex gap-4"><img src="./resources/Union.png" alt="">
+        <p class="hidden md:block font-bold text-2xl">BISCUIT</p></div>
+        <nav class="flex absolute md:static translate-x-[-18%] h-full md:h-auto items-center justify-center md:justify-center gap-10 text-sm font-semibold">
+            <a href="#about" class="hidden md:block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-900 text-black dark:text-white">About</a>
+            <a href="#work" class="hidden md:block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-900">Work</a>
+            <a href="#contact" class="hidden md:block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-900">Contact</a>
+        </nav>
+        <div class="flex gap-10">
+        <a id="dark" class="text-2xl dark:hidden cursor-pointer">🌑</a>
+        <a id="light" class="text-2xl hidden dark:block cursor-pointer">🌕</a>
+        <div class="relative inline-block text-left md:hidden">
+            <button onclick="toggleMenu()" class="bg-[#d3d3d3] pl-3 pr-3 rounded-full focus:outline-none">
+              Menu
+            </button>
+            <div id="dropdownMenu" class="hidden absolute mt-2 right-0 bg-white dark:bg-black rounded-lg shadow-lg w-40 z-10">
+                <a href="#about" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-900">About</a>
+                <a href="#work" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-900">Work</a>
+              <a href="#contact" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-900">Contact</a>
+            </div>
+          </div>
+        </div>
+        </nav>
+    </header>
+    <section class="flex flex-col justify-center items-center">
+    <img class="w-[82px] h-[82px] top-[166px] left-[146px] rounded-[100px] mt-23 mb-4" src="./resources/avatar.png" alt="">
+        <p class="w-[196px] h-[23] t-[264px] l-[90px] mb-3">Hi, I’m Nanang Prasetya</p>
+        <h2 class=" font-bold text-2xl text-center m-3">UI/UX Designer and 
+        Software Development</h2>
+        <p class="text-sm text-center leading-[1.9] m-3 mb-7">I’m from Indonesia and I have been working (Freelance) as a Software Development
+        especially in the UI/UX Designer and Development for more than
+        2 year at Panemu Indonesia company.</p>
+        <button class="w-[163.80062866210938]
+        h-[40] bg-[#4e5cf1] text-white pr-8 pl-8 pt-2 pb-2 rounded-full text-[10px] mb-6 cursor-pointer">SAY HELLO</button>
+                <a class="flex flec-row items-center gap-1 text-[10px] mb-40 cursor-pointer"><img class="hidden dark:block" src="./resources/downloadw.PNG" alt=""><img src="./resources/download.png" alt="">Download CV</a>
+        <nav class="flex gap-10 flex-row">
+        <a href="">
+                <img src="./resources/bx_bxl-linkedin.png" alt="">
+                <img class="hidden dark:block" src="./resources/bx_bxl-linkedinw.PNG" alt="">
+        </a>
+            <a href="">
+                <img src="./resources/Frame-b.png" alt="">
+                <img class="hidden dark:block" src="./resources/Frame-bw.PNG" alt="">
+            </a>
+            <a href="">
+                <img class="hidden dark:block mt-5" src="./resources/cib_dribbblew.PNG" alt="">
+                <img src="./resources/cib_dribbble.png" alt="">
+            </a>
+            <a href="">
+                <img class="hidden dark:block mt-5" src="./resources/Framew.PNG" alt="">
+                <img src="./resources/Frame.png" alt="">
+            </a>
+        </nav>
+    </section>
+
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <footer></footer>
+</body>
+</html>
