@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleTutorias.css">
+</head>
+<body>
+    <h1>Lista de personas</h1>
+    <div id="contenido"></div>
+    <script>
+        
+    const personas = [
+        {
+  nombre: "Carlos",
+  edad: 30,
+  profesion: "Ingeniero",
+  ciudad: "Madrid"
+},
+ {
+  nombre: "sebastian",
+  edad: 30,
+  profesion: "Profesor",
+  ciudad: "Montevideo"
+},
+ {
+  nombre: "Lucía",
+  edad: 25,
+  profesion: "Diseñadora",
+  ciudad: "Buenos Aires"
+},
+ {
+  nombre: "Andrés",
+  edad: 40,
+  profesion: "Médico",
+  ciudad: "Bogotá"
+},
+ {
+  nombre: "Valentina",
+  edad: 29,
+  profesion: "Programadora",
+  ciudad: "Santiago"
+},
+ {
+  nombre: "Mateo",
+  edad: 35,
+  profesion: "Arquitecto",
+  ciudad: "Lima"
+},
+ {
+  nombre: "Sofía",
+  edad: 32,
+  profesion: "Periodista",
+  ciudad: "Quito"
+}
+];
+
+const contenido = document.getElementById('contenido');
+        
+        personas.forEach(persona => {
+            let personaHTML = '<div>';
+            
+            for (let propiedad in persona) {
+                personaHTML += `<p><strong>${propiedad}:</strong> ${persona[propiedad]}</p>`;
+            }
+            
+            personaHTML += '</div><hr>';
+            contenido.innerHTML += personaHTML;
+        });
+    </script>
+    
+</body>
+</html>

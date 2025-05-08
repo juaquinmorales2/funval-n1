@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic Tac Toe</title>
+  <script src="./script.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-500 flex items-center justify-center min-h-screen">
+  <div class="text-center">
+    <h1 class="text-3xl font-bold mb-4">Tic Tac Toe</h1>
+    <div class="grid grid-cols-3 gap-2 w-60 mx-auto">
+      <div class="cell bg-white h-20 flex items-center justify-center text-3xl font-bold cursor-pointer border" data-index="0"></div>
+      <div class="cell bg-white h-20 flex items-center justify-center text-3xl font-bold cursor-pointer border" data-index="1"></div>
+      <div class="cell bg-white h-20 flex items-center justify-center text-3xl font-bold cursor-pointer border" data-index="2"></div>
+      <div class="cell bg-white h-20 flex items-center justify-center text-3xl font-bold cursor-pointer border" data-index="3"></div>
+      <div class="cell bg-white h-20 flex items-center justify-center text-3xl font-bold cursor-pointer border" data-index="4"></div>
+      <div class="cell bg-white h-20 flex items-center justify-center text-3xl font-bold cursor-pointer border" data-index="5"></div>
+      <div class="cell bg-white h-20 flex items-center justify-center text-3xl font-bold cursor-pointer border" data-index="6"></div>
+      <div class="cell bg-white h-20 flex items-center justify-center text-3xl font-bold cursor-pointer border" data-index="7"></div>
+      <div class="cell bg-white h-20 flex items-center justify-center text-3xl font-bold cursor-pointer border" data-index="8"></div>
+    </div>
+    <p id="statusText" class="text-xl mt-4"></p>
+    <button id="restartBtn" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Reiniciar</button>
+  </div>
+  
+</body>
+</html>

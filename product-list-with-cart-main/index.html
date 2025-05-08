@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="./output.css" rel="stylesheet">
+  <script src="./main.js" type="module"></script>
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-[#fefaf6] text-[#3d1f12] font-sans">
+  <h1 class="p-4 text-4xl font-bold mb-6 md:items-start md:ml-[160px] md:mt-20">Desserts</h1>
+  <div class= "p-4 w-sm mx-auto md:w-[80%] md:flex md:flex-col-2 md:p-0 md:mt-20">
+
+    <div id="cards" class="space-y-8 md:grid md:grid-cols-3 md:gap-4 md:space-y-0 md:w-[75%] md:mr-7 ">
+
+      <div class="mb-3">
+        <img src="./assets/images/image-waffle-mobile.jpg" class="rounded-xl w-full object-cover" />
+        <div class="flex justify-center mt-2">
+          <button class="bg-white border rounded-full px-6 py-2 text-sm shadow ">🛒 Add to Cart</button>
+        </div>
+        <p class="text-gray-400">Waffle</p>
+        <p class="mt-2 font-medium">Waffle with Berries</p>
+        <p class="text-red-600 font-semibold text-sm">$6.50</p>
+      </div>
+
+      <div class="mb-3">
+        <img src="./assets/images/image-creme-brulee-mobile.jpg" class="rounded-xl w-full object-cover" />
+        <div class="flex justify-center mt-2">
+          <button class="bg-white border rounded-full px-6 py-2 text-sm shadow">🛒 Add to Cart</button>
+        </div>
+        <p class="text-gray-400">Crème Brûlée</p>
+        <p class="mt-2 font-medium">Vanilla Bean Crème Brûlée</p>
+        <p class="text-red-600 font-semibold text-sm">$7.00</p>
+      </div>
+
+      <div class="mb-3">
+        <img src="./assets/images/image-macaron-mobile.jpg" class="rounded-xl w-full object-cover" />
+        <div class="flex justify-center mt-2">
+          <button class="bg-white border rounded-full px-6 py-2 text-sm shadow">🛒 Add to Cart</button>
+        </div>
+        <p class="text-gray-400">Macaron</p>
+        <p class="mt-2 font-medium">Macaron Mix of Five</p>
+        <p class="text-red-600 font-semibold text-sm">$8.00</p>
+      </div>
+
+      <div class="mb-3">
+        <img src="./assets/images/image-tiramisu-mobile.jpg" class="rounded-xl w-full object-cover" />
+        <div class="flex justify-center mt-2">
+          <button class="bg-white border rounded-full px-6 py-2 text-sm shadow">🛒 Add to Cart</button>
+        </div>
+        <p class="text-gray-400">Tiramisu</p>
+        <p class="mt-2 font-medium">Classic Tiramisu</p>
+        <p class="text-red-600 font-semibold text-sm">$5.50</p>
+      </div>
+
+      <div class="mb-3">
+        <img src="./assets/images/image-baklava-mobile.jpg" class="rounded-xl w-full object-cover" />
+        <div class="flex justify-center mt-2">
+          <button class="bg-white border rounded-full px-6 py-2 text-sm shadow">🛒 Add to Cart</button>
+        </div>
+        <p class="text-gray-400">Baklava</p>
+        <p class="mt-2 font-medium">Pistachio Baklava</p>
+        <p class="text-red-600 font-semibold text-sm">$4.00</p>
+      </div>
+
+      <div class="mb-3">
+        <img src="./assets/images/image-meringue-mobile.jpg" class="rounded-xl w-full object-cover" />
+        <div class="flex justify-center mt-2">
+          <button class="bg-white border rounded-full px-6 py-2 text-sm shadow">🛒 Add to Cart</button>
+        </div>
+        <p class="text-gray-400">Pie</p>
+        <p class="mt-2 font-medium">Lemon Meringue Pie</p>
+        <p class="text-red-600 font-semibold text-sm">$5.00</p>
+      </div>
+
+      <div class="mb-3">
+        <img src="./assets/images/image-cake-mobile.jpg" class="rounded-xl w-full object-cover" />
+        <div class="flex justify-center mt-2">
+          <button class="bg-white border rounded-full px-6 py-2 text-sm shadow">🛒 Add to Cart</button>
+        </div>
+        <p class="text-gray-400">Cake</p>
+        <p class="mt-2 font-medium">Red Velvet Cake</p>
+        <p class="text-red-600 font-semibold text-sm">$4.50</p>
+      </div>
+
+      <div class="mb-3">
+        <img src="./assets/images/image-brownie-mobile.jpg" class="rounded-xl w-full object-cover" />
+        <div class="flex justify-center mt-2">
+          <button class="bg-white border rounded-full px-6 py-2 text-sm shadow">🛒 Add to Cart</button>
+        </div>
+        <p class="text-gray-400">Brownie</p>
+        <p class="mt-2 font-medium">Salted Caramel Brownie</p>
+        <p class="text-red-600 font-semibold text-sm">$5.50</p>
+      </div>
+
+      <div class="mb-3">
+        <img src="./assets/images/image-panna-cotta-mobile.jpg" class="rounded-xl w-full object-cover" />
+        <div class="flex justify-center mt-2">
+          <button class="bg-white border rounded-full px-6 py-2 text-sm shadow">🛒 Add to Cart</button>
+        </div>
+        <p class="text-gray-400">Panna Cotta</p>
+        <p class="mt-2 font-medium">Vanilla Panna Cotta</p>
+        <p class="text-red-600 font-semibold text-sm">$6.50</p>
+      </div>
+    </div>
+
+    <div id="cart" class="mt-10 md:mt-0 md:w-[30%]">
+      <div class="bg-white rounded-xl p-4 text-center shadow md:h-80">
+        <p class="text-2xl font-semibold text-left text-red-700">Your Cart (0)</p>
+        <img src="./assets/images/illustration-empty-cart.svg" class="mx-auto my-4 w-20 h-20 md:h-40 md:w-40" />
+        <p class="text-sm text-amber-700">Your added items will appear here</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="attribution mt-10 mb-3">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

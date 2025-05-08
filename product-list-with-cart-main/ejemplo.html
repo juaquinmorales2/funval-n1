@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admins 🤑</title>
+</head>
+
+<body>
+    <h1 style="font-size: 40px; text-align: center; margin-bottom: 20px;">ADMINS 🤑</h1>
+    <div style="text-align: center; font-size: 20px;" id="cosa"></div>
+    <img src="./admin.jpeg" style="border-radius: 100%; justify-content: center; display: block; margin: 0 auto;" alt="Admin Image" width="300px" height="300px">
+    <script>
+        const usuarios = [
+            { id: 1, nombre: "Ana", roles: ["admin"] },
+            { id: 2, nombre: "Gino", roles: ["user"] },
+            { id: 3, nombre: "Cristian", roles: ["admin", "user"] },
+        ];
+
+        function mostrarAdmins(arrayUsuarios) {
+            const admins = arrayUsuarios
+                .filter(({ roles }) => roles.includes("admin"))
+                .map(u => ({ ...u, correo: `${u.nombre}@gmail.com` }));
+
+            const capibara = admins
+                .map(({ nombre, correo }) => `<p>Nombre: ${nombre}, Correo: ${correo}</p>`)
+                .join("");
+
+            document.getElementById("cosa").innerHTML = capibara;
+        }
+
+        mostrarAdmins(usuarios);
+    </script>
+</body>
+
+</html>
